@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Inicio de Sesión</title>
+    <style>
+        html, body { height: 100%; margin: 0; }
+        body {
+            display: flex; justify-content: center; align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .form-wrapper {
+            display: flex; flex-direction: column; align-items: center;
+            gap: 15px; padding: 20px; border: 2px solid #ccc;
+            border-radius: 8px; background-color: #f9f9f9;
+        }
+        .form-field {
+            display: flex; flex-direction: column; align-items: flex-start;
+            width: 280px; gap: 6px;
+        }
+        .form-field input { padding: 8px; width: 100%; box-sizing: border-box; }
+        .mensaje {
+            margin-top: 5px; padding: 12px; border: 2px solid #2196F3;
+            border-radius: 8px; background-color: #E3F2FD; width: 280px;
+        }
+        .mensaje p { margin: 6px 0; font-size: 16px; }
+        button { padding: 10px 20px; font-weight: bold; background: #333; color: #fff; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+        <h2>Inicio de Sesión</h2>
+        <form action="/ejercicio2" method="post">
+            <div class="form-field">
+                <label for="nombre">Ingresa tu nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Ingresa tu contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Ingresar</button>
+        </form>
+
+        {% if mensaje %}
+        <div class="mensaje">
+            <p>{{ mensaje }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

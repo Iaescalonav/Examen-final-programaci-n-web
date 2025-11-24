@@ -1,0 +1,155 @@
+/* ===== Estilos del menú principal ===== */
+.menu {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.menu-button {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.btn-ej1 { background-color: magenta; color: white; }
+.btn-ej2 { background-color: lightgreen; color: white; }
+
+/* ===== Estilos para centrar formularios ===== */
+body {
+    display: flex;
+    justify-content: center;   /* Centra horizontalmente */
+    align-items: center;       /* Centra verticalmente */
+    height: 100vh;             /* Ocupa toda la altura de la ventana */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;    /* Alinea los elementos uno debajo del otro */
+    align-items: center;       /* Centra horizontalmente los campos */
+    gap: 12px;                 /* Espacio entre elementos */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-container input {
+    padding: 8px;
+    width: 200px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* Centrar todo el contenido en la pantalla */
+body {
+    display: flex;
+    justify-content: center;   /* Centra horizontalmente */
+    align-items: center;       /* Centra verticalmente */
+    height: 100vh;             /* Ocupa toda la altura de la ventana */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;    /* Elementos en columna */
+    align-items: center;       /* Centra horizontalmente */
+    gap: 12px;                 /* Espacio entre elementos */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos del título */
+.form-container h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilos de los inputs */
+.form-container input {
+    padding: 8px;
+    width: 250px;
+}
+
+/* Botón del formulario */
+.form-container button {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* Centrar todo el contenido en la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;   /* Centra horizontalmente */
+    align-items: center;       /* Centra verticalmente */
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor del formulario */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;    /* Elementos en columna */
+    align-items: center;       /* Centra horizontalmente */
+    gap: 15px;                 /* Separación entre título, campos y botón */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Título del formulario */
+.form-wrapper h2 {
+    margin: 0;
+}
+
+/* Cada campo del formulario */
+.form-field {
+    display: flex;
+    flex-direction: column;    /* Label arriba, input debajo */
+    align-items: flex-start;   /* Alinea a la izquierda dentro del bloque */
+    width: 250px;
+    gap: 6px;                  /* Separación entre label e input */
+}
+
+/* Inputs */
+.form-field input {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Botón */
+.form-wrapper button {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
